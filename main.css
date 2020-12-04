@@ -46,16 +46,18 @@ body {
 #canvas {
   position: relative;
   z-index: 2;
-  display: block;
 }
 
 #hero-section {
   width: 100%;
-  height: 1000px;
-  background: url(hero-image.png);
+  position: relative;
 }
+
 .hero-img {
-  z-index: 0;
-  width: 100%;
+  margin-top: -20em;
+}
+
+#jellybean {
+  margin-top: -12em;
   position: relative;
 }

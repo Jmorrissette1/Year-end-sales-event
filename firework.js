@@ -45,7 +45,7 @@ class Time {
 }
 
 class Particle {
-	constructor(position, velocity = new Vector2, color = 'white', radius = 1, lifetime = 1, mass = 1) {
+	constructor(position, velocity = new Vector2, color = 'white', radius = 10, lifetime = 10, mass = 10) {
 		this.position = position;
 		this.velocity = velocity;
 		this.color = color;
@@ -78,7 +78,7 @@ class Particle {
 		context.fillStyle = this.color;
 		
 		context.beginPath();
-		context.arc(this.position.x, this.position.y, radius, 0, Math.PI * 2);
+		context.arc(this.position.x, this.position.y, radius, 0, Math.PI * 1);
 		context.fill();
 	}
 	
@@ -259,5 +259,5 @@ document.body.appendChild(canvas);
 window.onresize = resize;
 resize();
 
-setInterval(addRocket, 2000);
+setInterval(addRocket, 1000);
 render();
