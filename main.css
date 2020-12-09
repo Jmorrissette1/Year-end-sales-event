@@ -33,7 +33,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  background: url(Background.png);
+  background: url(https://di-uploads-pod14.dealerinspire.com/westhillsautoplex/uploads/2020/12/Background.png);
   background-position: center;
   background-color: #1d1868;
   background-repeat: no-repeat;
@@ -48,11 +48,18 @@ body {
   margin-top: -10em;
 }
 
+.hero-img-m {
+  display: none;
+}
+
 #jellybean {
   margin-top: -12em;
   position: relative;
 }
 
+#jellybean-m {
+  display: none;
+}
 .disclaim-box {
   width: 100%;
 
@@ -145,10 +152,17 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+  #jellybean-m {
+    display: none;
+  }
+
   .hero-img {
-    width: 1000px;
+    width: 800px;
     height: auto;
     margin-top: 75px;
+  }
+  .hero-img-m {
+    display: none;
   }
 
   #jellybean {
@@ -178,8 +192,61 @@ body {
 
   #landing-container {
     height: 1440px;
-    background: url(Background-T.png);
+    background: url(https://di-uploads-pod14.dealerinspire.com/westhillsautoplex/uploads/2020/12/Background-T.png);
     background-color: #1d1868;
     background-position: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-img {
+    width: 100%;
+    height: auto;
+    margin-top: 75px;
+  }
+
+  #landing-container {
+    height: 1200px;
+    background: url(https://di-uploads-pod14.dealerinspire.com/westhillsautoplex/uploads/2020/12/Background-m.png);
+    background-color: #1d1868;
+    background-position: center;
+  }
+
+  #jellybean {
+    display: none;
+  }
+
+  #jellybean-m {
+    margin-top: -45px;
+    margin-right: 40px;
+    display: inline;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-img-m {
+    display: inline;
+    width: 100%;
+  }
+
+  .yes-h1 {
+    font-size: 38px;
+  }
+
+  .inv-button {
+    width: 320px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .disclaimer-button {
+    margin-top: -70px;
+    width: 320px;
+    height: 45px;
+    padding-top: 5px;
+    margin-bottom: 5px;
   }
 }
