@@ -10,14 +10,6 @@ body {
   padding: 0;
 }
 
-body {
-  width: 100%;
-  background: url(Background.png);
-  background-position: center;
-  background-color: #1d1868;
-  background-repeat: no-repeat;
-}
-
 .container {
   width: 100%;
   display: flex;
@@ -41,20 +33,19 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-}
-
-#canvas {
-  position: relative;
-  z-index: 2;
+  background: url(Background.png);
+  background-position: center;
+  background-color: #1d1868;
+  background-repeat: no-repeat;
 }
 
 #hero-section {
   width: 100%;
-  position: relative;
 }
 
 .hero-img {
-  margin-top: -20em;
+  width: 1440px;
+  margin-top: -10em;
 }
 
 #jellybean {
@@ -64,7 +55,7 @@ body {
 
 .disclaim-box {
   width: 100%;
-  background-color: #231f20;
+
   display: flex;
   align-items: center;
   z-index: 2;
@@ -93,6 +84,7 @@ body {
   overflow: hidden;
   color: #fff;
   z-index: 2;
+  background-color: #1d1868;
 }
 
 #button-box-section {
@@ -154,22 +146,40 @@ body {
 
 @media only screen and (max-width: 800px) {
   .hero-img {
-    margin-left: 40em;
+    width: 1000px;
+    height: auto;
+    margin-top: 75px;
   }
 
   #jellybean {
-    margin-left: 45em;
+    width: 100%;
+    margin-top: -40px;
   }
-  .incentive-section {
-    margin-left: 20em;
-  }
+
   .yes-h1 {
-    font-size: 72px;
+    font-size: 50px;
   }
-  #button-box-section {
-    margin-left: 21em;
+
+  .buttons-box {
+    flex-direction: column;
+  }
+
+  .inv-button {
+    width: 320px;
+    height: 65px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
   .disclaimer-button {
-    margin-left: 34em;
+    padding-left: 100px;
+    margin-top: 20px;
+    width: 320px;
+  }
+
+  #landing-container {
+    height: 1440px;
+    background: url(Background-T.png);
+    background-color: #1d1868;
+    background-position: center;
   }
 }
