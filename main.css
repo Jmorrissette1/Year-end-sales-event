@@ -153,10 +153,57 @@ body {
 
 #incentive-section {
   width: 100%;
-  height: 250px;
+  height: auto;
   background-color: white;
 }
+.incentive-p1 {
+  margin-top: 30px;
+  font-size: 38px;
+  margin-right: 15px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #1d1868;
+}
 
+.incentive-p2 {
+  margin-top: 30px;
+  font-size: 38px;
+  font-family: "Roboto", sans-serif;
+  color: #1d1868;
+}
+
+.incentive-text-1 {
+  align-items: center;
+}
+.incentive-text-2 {
+  align-items: center;
+}
+
+.price-p1 {
+  margin-top: 0px;
+  font-size: 82px;
+  color: #1d1868;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-right: 25px;
+}
+
+.price-p2 {
+  margin-top: 0px;
+  font-size: 23px;
+  color: #1d1868;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-right: 10px;
+}
+
+.logo-img {
+  margin-top: -75px;
+}
+
+.logo-img-m {
+  display: none;
+}
 @media only screen and (max-width: 800px) {
   #jellybean-m {
     display: none;
@@ -181,6 +228,7 @@ body {
   }
 
   .buttons-box {
+    margin-left: 5px;
     flex-direction: column;
   }
 
@@ -197,10 +245,28 @@ body {
   }
 
   #landing-container {
-    height: 1440px;
+    height: auto;
     background: url(https://di-uploads-pod14.dealerinspire.com/westhillsautoplex/uploads/2020/12/Background-T.png);
     background-color: #1d1868;
     background-position: center;
+  }
+  #incentive-section {
+    height: 200px;
+  }
+  .price-p1 {
+    margin-top: 0px;
+    font-size: 52px;
+  }
+  .incentive-p1 {
+    font-size: 28px;
+  }
+  .incentive-p2 {
+    font-size: 28px;
+  }
+  .logo-img {
+    margin-top: -75px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -223,8 +289,8 @@ body {
   }
 
   #jellybean-m {
+    width: 100%;
     margin-top: -45px;
-    margin-right: 40px;
     display: inline;
   }
 
@@ -254,5 +320,44 @@ body {
     height: 45px;
     padding-top: 5px;
     margin-bottom: 5px;
+  }
+
+  .incentive-text-1 {
+    flex-direction: column;
+  }
+
+  .incentive-p1 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .incentive-p2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .incentive-text-2 {
+    flex-wrap: wrap;
+  }
+  .logo-img {
+    display: none;
+  }
+
+  .price-p1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 32px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .price-p2 {
+    margin-top: 0px;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 50px;
+  }
+
+  .logo-img-m {
+    display: inline;
+    margin-top: -150px;
   }
 }
