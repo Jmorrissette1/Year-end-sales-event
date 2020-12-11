@@ -151,6 +151,12 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+#incentive-section {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+}
+
 @media only screen and (max-width: 800px) {
   #jellybean-m {
     display: none;
